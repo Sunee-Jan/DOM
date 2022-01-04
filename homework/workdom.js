@@ -4,10 +4,10 @@ window.dom={
     },
     style(node,name,value){
         if(arguments.length===3){
-           return node.style[name]=value}
+           node.style[name]=value}
         else if(arguments.length===2){
           if(typeof name==='string')
-             return node.syele[name]}
+             return node.style[name]}
           else if(name instanceof Object){
             for(let key in name){
              return node.style[key]=name[key]}
