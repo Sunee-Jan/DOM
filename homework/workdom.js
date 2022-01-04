@@ -10,7 +10,7 @@ window.dom={
              return node.style[name]}
           else if(name instanceof Object){
             for(let key in name){
-             return node.style[key]=name[key]}
+             node.style[key]=name[key]}
           }
       },
     each(divList,fn){
